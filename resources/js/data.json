@@ -1,0 +1,153 @@
+{
+    "events": [
+        {
+            "id": 1,
+            "title": "Workshop Pengembangan Web Modern",
+            "description": "Pelajari teknologi web terbaru seperti Next.js, React, dan Tailwind CSS dalam workshop intensif selama 2 hari. Dapatkan pengalaman hands-on dalam membangun aplikasi web yang responsif dan modern.",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "date": "15 Oktober 2024",
+            "location": "Jakarta Convention Center",
+            "duration": "2 hari",
+            "time": "09:00 - 16:00"
+        },
+        {
+            "id": 2,
+            "title": "Seminar Digital Marketing Terkini",
+            "description": "Eksplorasi strategi digital marketing yang efektif di era modern. Pelajari tentang SEO, social media marketing, content marketing, dan analytics untuk meningkatkan bisnis Anda.",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "date": "22 Oktober 2024",
+            "location": "Hotel Mulia Jakarta",
+            "duration": "2 hari",
+            "time": "08:00 - 15:00"
+        },
+        {
+            "id": 3,
+            "title": "Bootcamp Mobile App Development",
+            "description": "Intensive bootcamp untuk mempelajari pengembangan aplikasi mobile menggunakan React Native dan Flutter. Cocok untuk pemula hingga intermediate developer yang ingin menguasai mobile development.",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "date": "5 November 2024",
+            "location": "Binus University",
+            "duration": "2 hari",
+            "time": "09:00 - 17:00"
+        }
+    ],
+
+    "timelines": {
+        "1": [
+            {
+                "date": "1 September 2024",
+                "title": "Pendaftaran Dibuka",
+                "content": "Peserta mulai dapat melakukan pendaftaran online melalui website resmi. Informasi mengenai biaya, jadwal, dan syarat ditampilkan."
+            },
+            {
+                "date": "20 September 2024",
+                "title": "Konfirmasi Pembayaran",
+                "content": "Peserta melakukan pembayaran biaya workshop dan mengunggah bukti pembayaran. Tim admin akan melakukan verifikasi."
+            },
+            {
+                "date": "5 Oktober 2024",
+                "title": "Pengumuman Peserta Terdaftar",
+                "content": "Peserta yang sudah terverifikasi menerima email berisi detail acara, daftar materi, dan persiapan teknis yang perlu dibawa."
+            },
+            {
+                "date": "12 Oktober 2024",
+                "title": "Persiapan Peralatan",
+                "content": "Peserta diminta menyiapkan laptop, Node.js, Git, dan VSCode sebelum hari-H."
+            },
+            {
+                "date": "15 Oktober 2024",
+                "title": "Hari-H Workshop",
+                "content": "Workshop berlangsung selama 2 hari dengan sesi hands-on membangun aplikasi web responsif dan modern."
+            }
+        ],
+
+        "2": [
+            {
+                "date": "10 September 2024",
+                "title": "Registrasi Peserta",
+                "content": "Pendaftaran seminar dibuka untuk umum. Peserta bisa memilih paket reguler atau VIP."
+            },
+            {
+                "date": "25 September 2024",
+                "title": "Pembayaran & Konfirmasi",
+                "content": "Peserta melakukan pembayaran dan menerima email konfirmasi serta e-ticket acara."
+            },
+            {
+                "date": "10 Oktober 2024",
+                "title": "Pengiriman Materi Awal",
+                "content": "Peserta menerima materi pembuka berupa e-book tentang SEO dan strategi konten."
+            },
+            {
+                "date": "18 Oktober 2024",
+                "title": "Briefing Online",
+                "content": "Sesi online singkat untuk mengenal pembicara dan overview seminar."
+            },
+            {
+                "date": "22 Oktober 2024",
+                "title": "Hari-H Seminar",
+                "content": "Seminar berlangsung selama 2 hari membahas strategi digital marketing modern."
+            }
+        ],
+
+        "3": [
+            {
+                "date": "15 September 2024",
+                "title": "Registrasi & Seleksi Awal",
+                "content": "Peserta mendaftar dan mengikuti seleksi dasar pemrograman."
+            },
+            {
+                "date": "1 Oktober 2024",
+                "title": "Pengumuman Peserta Lolos",
+                "content": "Peserta lolos seleksi menerima email detail persiapan tools."
+            },
+            {
+                "date": "18 Oktober 2024",
+                "title": "Persiapan Tools",
+                "content": "Peserta menyiapkan React Native CLI atau Flutter SDK, emulator, dan akun GitHub."
+            },
+            {
+                "date": "1 November 2024",
+                "title": "Briefing Teknis Online",
+                "content": "Sesi Zoom untuk menjelaskan alur bootcamp dan persiapan perangkat."
+            },
+            {
+                "date": "5 November 2024",
+                "title": "Hari-H Bootcamp",
+                "content": "Bootcamp berlangsung 2 hari di Binus University dengan sesi intensif membangun aplikasi mobile."
+            }
+        ]
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "title": "Panduan Lengkap Memulai Career di Tech Industry",
+            "description": "Industri teknologi menawarkan peluang karir yang menjanjikan. Artikel ini membahas langkah-langkah praktis untuk memulai karir di bidang teknologi, mulai dari skill yang dibutuhkan, portfolio yang menarik, hingga tips interview yang efektif.",
+            "author": "Sarah Wijaya",
+            "publishDate": "20 Sep 2024",
+            "category": "Karir",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "slug": "panduan-lengkap-memulai-career-di-tech-industry"
+        },
+        {
+            "id": 2,
+            "title": "Tren Teknologi 2024: AI dan Machine Learning",
+            "description": "Artificial Intelligence dan Machine Learning terus berkembang pesat. Pelajari tren terbaru, implementasi praktis, dan bagaimana teknologi ini akan mengubah berbagai industri dalam beberapa tahun ke depan.",
+            "author": "Dr. Ahmad Rizki",
+            "publishDate": "18 Sep 2024",
+            "category": "Teknologi",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "slug": "tren-teknologi-2024-ai-dan-machine-learning"
+        },
+        {
+            "id": 3,
+            "title": "Best Practices dalam Pengembangan Web Aplikasi",
+            "description": "Kualitas kode dan performa aplikasi sangat penting dalam pengembangan web. Artikel ini mengulas best practices yang harus diterapkan, termasuk clean code, testing, optimization, dan security considerations.",
+            "author": "Budi Santoso",
+            "publishDate": "15 Sep 2024",
+            "category": "Web Development",
+            "thumbnail": "images/placeholder/placeholder.svg",
+            "slug": "best-practices-dalam-pengembangan-web-aplikasi"
+        }
+    ]
+}
