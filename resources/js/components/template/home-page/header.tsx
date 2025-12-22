@@ -1,9 +1,11 @@
 'use client';
+import logo from '@/assets/images/logo/logo-f11.png';
+import { useAppearance } from '@/hooks/use-appearance';
 import { cn } from '@/lib/utils';
 import { dashboard, login } from '@/routes';
 import { SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
-import { LayoutGrid, Menu, User, X } from 'lucide-react';
+import { LayoutGrid, Menu, Moon, Sun, User, X } from 'lucide-react';
 import React from 'react';
 
 const menuItems = [
@@ -12,11 +14,8 @@ const menuItems = [
     { name: 'Blog', href: '/article' },
 ];
 
-export default function Header({
-    canRegister = true,
-}: {
-    canRegister?: boolean;
-}) {
+export default function Header() {
+    const { appearance, updateAppearance } = useAppearance();
     const { auth } = usePage<SharedData>().props;
 
     const [menuState, setMenuState] = React.useState(false);
@@ -50,7 +49,7 @@ export default function Header({
                                 className="flex items-center space-x-2"
                             >
                                 <img
-                                    src="images/logo/logo-f11.png"
+                                    src={logo}
                                     alt="logo"
                                     width={40}
                                     height={23}
@@ -59,7 +58,25 @@ export default function Header({
                                     Biro TI
                                 </span>
                             </Link>
-                            <div className="flex gap-3">
+                            <div className="flex items-center gap-3">
+                                <nav>
+                                    <button
+                                        className='className="inline-block dark:hover:bg-[#3E3E3A]/50" rounded-sm p-1.5 text-[#1b1b18] hover:bg-[#19140010] dark:text-[#EDEDEC]'
+                                        onClick={() =>
+                                            updateAppearance(
+                                                appearance === 'light'
+                                                    ? 'dark'
+                                                    : 'light',
+                                            )
+                                        }
+                                    >
+                                        {appearance === 'light' ? (
+                                            <Sun />
+                                        ) : (
+                                            <Moon />
+                                        )}
+                                    </button>
+                                </nav>
                                 <nav className="flex items-center gap-4">
                                     {auth.user ? (
                                         <Link

@@ -32,13 +32,11 @@ export function AnimatedGridPattern({
     className,
     maxOpacity = 0.5,
     duration = 4,
-    repeatDelay = 0.5,
     ...props
 }: AnimatedGridPatternProps) {
     const id = useId();
     const containerRef = useRef(null);
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-    const [squares, setSquares] = useState(() => generateSquares(numSquares));
 
     function getPos() {
         return [
@@ -54,6 +52,7 @@ export function AnimatedGridPattern({
             pos: getPos(),
         }));
     }
+    const [squares, setSquares] = useState(() => generateSquares(numSquares));
 
     // Function to update a single square's position
     const updateSquarePosition = (id: number) => {

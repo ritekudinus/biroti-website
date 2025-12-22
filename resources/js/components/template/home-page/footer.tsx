@@ -1,6 +1,6 @@
+import logo from '@/assets/images/logo/logo-f11.png';
 import { Card } from '@/components/ui/card';
 import { Link } from '@inertiajs/react';
-
 const links = [
     {
         title: 'Profile',
@@ -26,12 +26,7 @@ export default function FooterSection() {
                         aria-label="home"
                         className="mx-auto flex size-fit items-center space-x-2"
                     >
-                        <img
-                            src="images/logo/logo-f11.png"
-                            alt="logo"
-                            width={40}
-                            height={23}
-                        />
+                        <img src={logo} alt="logo" width={40} height={23} />
                         <span className="font-heading text-xl">
                             Biro Teknik Informatika
                         </span>

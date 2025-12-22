@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Link } from '@inertiajs/react';
 import { ArrowRight, Award, Play, Target, Users } from 'lucide-react';
+import heroImage from '../../../assets/images/hero-image.webp';
 
 export default function HeroSection() {
     return (
@@ -94,7 +95,7 @@ export default function HeroSection() {
                             {/* Decorative elements */}
                             <div className="relative rounded-2xl p-1">
                                 <img
-                                    src="images/hero-image.webp"
+                                    src={heroImage}
                                     alt="Biro Teknik Informatika - Fasilitas Modern"
                                     className="relative aspect-video w-full rounded-xl shadow-2xl ring-1 ring-border/10"
                                     style={{
