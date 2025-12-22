@@ -1,5 +1,5 @@
-import Header from '@/components/template/home-page/header';
 import Footer from '@/components/template/home-page/footer';
+import Header from '@/components/template/home-page/header';
 
 export default function ArticleLayout({
     children,
@@ -7,10 +7,10 @@ export default function ArticleLayout({
     children: React.ReactNode;
 }) {
     return (
-      <>
-      <Header/>
-      {children}
-      <Footer/>
-      </>
+        <>
+            <Header />
+            {children}
+            <Footer />
+        </>
     );
 }
