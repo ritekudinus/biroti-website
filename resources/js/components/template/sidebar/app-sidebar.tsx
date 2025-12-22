@@ -1,6 +1,5 @@
-import { NavFooter } from '@/components/nav-footer';
-import { NavMain } from '@/components/nav-main';
-import { NavUser } from '@/components/nav-user';
+import { NavMain } from '@/components/template/sidebar/nav-main';
+import { NavUser } from '@/components/template/sidebar/nav-user';
 import {
     Sidebar,
     SidebarContent,
@@ -13,27 +12,44 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
-import AppLogo from './app-logo';
+import {
+    Calendar,
+    LayoutGrid,
+    Newspaper,
+    Pencil,
+    SquarePen,
+} from 'lucide-react';
+import AppLogo from '../../app-logo';
+import { NavArticle } from './nav-article';
 
 const mainNavItems: NavItem[] = [
     {
-        title: 'Dashboard',
+        title: 'Events',
         href: dashboard(),
         icon: LayoutGrid,
     },
+    {
+        title: 'Attendance',
+        href: dashboard(),
+        icon: Calendar,
+    },
 ];
 
-const footerNavItems: NavItem[] = [
+const articleNavItems: NavItem[] = [
     {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
-        icon: Folder,
+        title: 'Write Article',
+        href: dashboard(),
+        icon: Pencil,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
-        icon: BookOpen,
+        title: 'All Articles',
+        href: dashboard(),
+        icon: Newspaper,
+    },
+    {
+        title: 'Drafts',
+        href: dashboard(),
+        icon: SquarePen,
     },
 ];
 
@@ -54,10 +70,10 @@ export function AppSidebar() {
 
             <SidebarContent>
                 <NavMain items={mainNavItems} />
+                <NavArticle items={articleNavItems} />
             </SidebarContent>
 
             <SidebarFooter>
-                <NavFooter items={footerNavItems} className="mt-auto" />
                 <NavUser />
             </SidebarFooter>
         </Sidebar>
