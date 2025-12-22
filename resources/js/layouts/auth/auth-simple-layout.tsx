@@ -1,17 +1,16 @@
+import logo from '@/assets/images/logo/logo-f11.png';
+import udinus from '@/assets/images/udinus.jpg';
 import { AnimatedGridPattern } from '@/components/template/home-page/animated-grid-pattern';
 import { cn } from '@/lib/utils';
 import { type PropsWithChildren } from 'react';
-
 interface AuthLayoutProps {
     name?: string;
     title?: string;
-    description?: string;
 }
 
 export default function AuthSimpleLayout({
     children,
     title,
-    description,
 }: PropsWithChildren<AuthLayoutProps>) {
     return (
         <div className="grid min-h-svh lg:grid-cols-2">
@@ -34,12 +33,7 @@ export default function AuthSimpleLayout({
                 <div className="flex justify-center gap-2 md:justify-start">
                     <a href="#" className="flex items-center gap-2 font-medium">
                         <div className="flex items-center justify-center rounded-md text-primary-foreground">
-                            <img
-                                src="images/logo/logo-f11.png"
-                                width={50}
-                                height={50}
-                                alt="logo"
-                            />
+                            <img src={logo} width={50} height={50} alt="logo" />
                         </div>
                         Biro Teknik Informatika
                     </a>
@@ -53,7 +47,7 @@ export default function AuthSimpleLayout({
             </div>
             <div className="relative hidden bg-muted lg:block">
                 <img
-                    src="images/udinus.jpg"
+                    src={udinus}
                     alt="Login Cover"
                     className="h-full object-cover"
                 />
