@@ -1,6 +1,12 @@
-import { Block, BlockNoteSchema, defaultBlockSpecs } from '@blocknote/core';
+import { useAppearance } from '@/hooks/use-appearance';
+import {
+    Block,
+    BlockNoteEditor,
+    BlockNoteSchema,
+    defaultBlockSpecs,
+} from '@blocknote/core';
+
 import '@blocknote/core/fonts/inter.css';
-import { useCreateBlockNote } from '@blocknote/react';
 import { BlockNoteView } from '@blocknote/shadcn';
 import '@blocknote/shadcn/style.css';
 import '../../../../css/app.css';
@@ -11,6 +17,8 @@ type EditorProps = {
 
 // Our <Editor> component we can reuse later
 export default function Editor({ editable, onSetBlocks }: EditorProps) {
+    const { appearance } = useAppearance();
+
     const { audio, file, ...remainingBlockSpecs } = defaultBlockSpecs;
 
     const schema = BlockNoteSchema.create({
@@ -20,7 +28,7 @@ export default function Editor({ editable, onSetBlocks }: EditorProps) {
         },
     });
 
-    const editor = useCreateBlockNote({
+    const editor = BlockNoteEditor.create({
         schema,
     });
 
@@ -28,6 +36,7 @@ export default function Editor({ editable, onSetBlocks }: EditorProps) {
         <BlockNoteView
             editor={editor}
             editable={editable}
+            theme={appearance === 'dark' ? 'dark' : 'light'}
             onChange={() => {
                 onSetBlocks(editor.document);
             }}
